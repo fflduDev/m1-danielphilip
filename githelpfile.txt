@@ -1,0 +1,135 @@
+
+casey@HPJ MINGW64 ~
+$ cd c:
+
+casey@HPJ MINGW64 /c
+$ ls
+'$Recycle.Bin'/            'Program Files'/               hiberfil.sys
+'$WinREAgent'/             'Program Files (x86)'/         hp/
+ Config.Msi/                ProgramData/                  pagefile.sys
+'Documents and Settings'@   Recovery/                     swapfile.sys
+ DumpStack.log              SWSetup/                      wal073435E8
+ DumpStack.log.tmp         'System Volume Information'/   wal5FD04E00
+ Intel/                     System.sav@                   wal60D5D0E5
+ OneDriveTemp/              Users/                        wal682A9935
+ PerfLogs/                  Windows/
+
+casey@HPJ MINGW64 /c
+$ cd users:
+bash: cd: users:: No such file or directory
+
+casey@HPJ MINGW64 /c
+$ cd Users
+
+casey@HPJ MINGW64 /c/Users
+$ ls
+'All Users'@   Default/  'Default User'@   Public/   casey/   desktop.ini
+
+casey@HPJ MINGW64 /c/Users
+$ cd casey
+
+casey@HPJ MINGW64 ~
+$ ls
+'"C:'/
+'"C:Users'/
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Documents/
+ Downloads/
+ Farmingresults.csv
+ Favorites/
+ IdeaProjects/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.0.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.1.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.2.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NTUSER.DAT{ee69c7b1-beae-11ec-a5d8-4851c5939c1f}.TxR.0.regtrans-ms
+ NTUSER.DAT{ee69c7b1-beae-11ec-a5d8-4851c5939c1f}.TxR.1.regtrans-ms
+ NTUSER.DAT{ee69c7b1-beae-11ec-a5d8-4851c5939c1f}.TxR.2.regtrans-ms
+ NTUSER.DAT{ee69c7b1-beae-11ec-a5d8-4851c5939c1f}.TxR.blf
+ NTUSER.DAT{ee69c7b2-beae-11ec-a5d8-4851c5939c1f}.TM.blf
+ NTUSER.DAT{ee69c7b2-beae-11ec-a5d8-4851c5939c1f}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{ee69c7b2-beae-11ec-a5d8-4851c5939c1f}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Untitled.ipynb
+ Videos/
+ Zotero/
+ anaconda3/
+ bluej/
+ eclipse/
+ eclipse-workspace/
+ m1-danielphilip/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+casey@HPJ MINGW64 ~
+$ cd m1-danielphilip
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$ ls
+app/  linkedList/  queue/  stack/
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$ ls
+app/  linkedList/  queue/  stack/
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$ notepad
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$ notepad
+ls
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$ ls
+app/  linkedList/  queue/  stack/  test.txt
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$ ls
+app/  linkedList/  queue/  stack/  test.txt
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$ git add test.txt
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$ git commit -m "test commit"
+[master c8d2249] test commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .testy.txt.swp
+ create mode 100644 test.txt
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 648 bytes | 324.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:fflduDev/m1-danielphilip.git
+   e540ee1..c8d2249  master -> master
+
+casey@HPJ MINGW64 ~/m1-danielphilip (master)
+$
