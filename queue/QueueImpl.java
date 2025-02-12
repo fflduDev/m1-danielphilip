@@ -2,7 +2,7 @@ package queue;
 
 public class QueueImpl implements Queue {
 int Length = 6;
-Strig[] arr = new Strig[Length];
+String[] arr = new String[Length];
 int size = 0;
 	@Override
 	public boolean isFull() {
