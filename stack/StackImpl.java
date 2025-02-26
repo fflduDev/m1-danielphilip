@@ -1,55 +1,76 @@
-package stack; 
+package stack;
+
+import java.util.Arrays;
 
 public class StackImpl implements Stack {
+	private String[] stack;
+	private int top;
+	private int capacity;
+
+	public StackImpl(int capacity) {
+		this.capacity = capacity;
+		this.stack = new String[capacity];
+		this.top = -1;
+	}
 
 	@Override
 	public void push(String s) {
-	
-		System.out.println("thing i added to stack: " + s);
-	
+		if (isFull()) {
+			System.out.println("Stack is full. Cannot push.");
+			return;
+		}
+		stack[++top] = s;
+		System.out.println("Pushed: " + s);
 	}
 
 	@Override
 	public String pop() {
-		// TODO Auto-generated method stub
-		return null;
+		if (isEmpty()) {
+			System.out.println("Stack is empty. Cannot pop.");
+			return null;
+		}
+		return stack[top--];
 	}
 
 	@Override
 	public Boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return null;
+		return top == -1;
 	}
 
 	@Override
 	public Boolean isFull() {
-		// TODO Auto-generated method stub
-		return null;
+		return top == capacity - 1;
 	}
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
+		return top + 1;
 	}
 
 	@Override
 	public String peek() {
-		// TODO Auto-generated method stub
-		return null;
+		if (isEmpty()) {
+			System.out.println("Stack is empty. Nothing to peek.");
+			return null;
+		}
+		return stack[top];
 	}
 
 	@Override
 	public void setCapacity(int size) {
-		// TODO Auto-generated method stub
-		
+		this.capacity = size;
+		stack = Arrays.copyOf(stack, size);
 	}
 
 	@Override
 	public void display() {
-		// TODO Auto-generated method stub
-		
+		if (isEmpty()) {
+			System.out.println("Stack is empty.");
+			return;
+		}
+		System.out.println("Stack contents: ");
+		for (int i = top; i >= 0; i--) {
+			System.out.println(stack[i]);
+		}
 	}
- 
-
 }
