@@ -20,8 +20,9 @@ public class QueueTester {
 		q.deQueue();
 		q.enQueue("k");
 		
-		q.peek();
-		
+		System.out.println("Peek after adding K: " + q.peek());
+        System.out.println("\nQueue contents:");
+		q.display();
 		
 	}
 

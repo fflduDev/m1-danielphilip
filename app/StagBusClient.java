@@ -14,7 +14,29 @@ public class StagBusClient {
 
 		System.out.println("-----L I S T  T E S T------");
 		
-		//listRunTestMethod...
+		LinkedList l = new LinkedListImpl();
+		l.addItem("Sam");
+		l.listItems();
+		System.out.println(l.isItemInList("Sam"));
+		l.deleteItem("Sam");
+		l.addItem("Pam");
+		l.addItem("Billy");
+		l.addItem("Bob");
+		l.addItem("E");
+		l.addItem("Jo");
+		l.deleteItem("Jo");
+		l.addItem("k");
+
+		System.out.println("List contents:");
+		System.out.println(l.itemCount());
+		l.listItems();
+
+		l.insertBefore("PJ", "Billy");
+		l.insertAfter("Daniel", "Billy");
+		l.sort();
+		System.out.println("List contents after Editing:");
+		System.out.println(l.itemCount());
+		l.listItems();
  		
 		System.out.println("-----S T A C K  T E S T------");
 		Stack stackTester = new StackImpl(10);
@@ -55,9 +77,23 @@ public class StagBusClient {
 
 	 
 		System.out.println("----Q U E U E  T E S T-------");
-		
 
-		//StackRunTestMethod...
+		Queue q = new QueueImpl();
+		q.deQueue();
+		q.isEmpty();
+		q.peek();
+		q.enQueue("Sam");
+		q.enQueue("Pam");
+		q.enQueue("Billy");
+		q.enQueue("Bob");
+		q.enQueue("E");
+		q.enQueue("Jo");
+		q.deQueue();
+		q.enQueue("k");
+		
+		System.out.println("Peek after adding K: " + q.peek());
+        System.out.println("\nQueue contents:");
+		q.display();
 		
 	 	}
 
